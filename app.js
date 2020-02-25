@@ -101,19 +101,19 @@ function addNewStore(event) {
   var addMaxCustomers = parseInt(event.target.maxCustomers.value);
   var addAvgSale = parseInt(event.target.avgSale.value);
 
-  event.preventDefault();
+  // event.preventDefault();
 
-  if (!event.target.name.value || !event.target.minCustomers.value || !event.target.maxCustomers.value || !event.target.avgSale.value) {
-    return alert('Oops, you forgot something! Please check your entries and try again.');
-  }
+  // if (!event.target.name.value || !event.target.minCustomers.value || !event.target.maxCustomers.value || !event.target.avgSale.value) {
+  //   return alert('Oops, you forgot something! Please check your entries and try again.');
+  // }
 
-  if (event.target.minCustomers.value < 0 || event.target.maxCustomers.value < 0 || event.target.avgSale.value < 0) {
-    return alert('How are you putting negative values in here? Quit it, you\re not giving away customers and cookies.');
-  }
+  // if (event.target.minCustomers.value < 0 || event.target.maxCustomers.value < 0 || event.target.avgSale.value < 0) {
+  //   return alert('How are you putting negative values in here? Quit it, you\re not giving away customers and cookies.');
+  // }
 
-  if (event.target.minCustomers.value > event.target.maxCustomers.value) {
-    return alert('That\'s not how numbers work, nerd.');
-  }
+  // if (event.target.minCustomers.value > event.target.maxCustomers.value) {
+  //   return alert('That\'s not how numbers work, nerd.');
+  // }
 
 
   for (var i = 0; i < allLocations.length; i++) {
