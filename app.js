@@ -13,10 +13,13 @@ var shopSeattle = {
   getrandCust: function () {
     for (let l = 0; l < this.numberOfHours.length; l++) {
       this.avgcookiesperh.push(getRandomInt(this.minCust, this.maxCust));
+      this.numberOfCookiesTotal=this.numberOfCookiesTotal+this.avgcookiesperh[l];
 
 
     }
   },
+ 
+
   render: function () {
     var contain = document.getElementById('Shopes');
     var articleEle1 = document.createElement('article-h1');
@@ -63,9 +66,11 @@ var shopTokyo = {
   getrandCust: function () {
     for (let l = 0; l < this.numberOfHours.length; l++) {
       this.numberOfCust = getRandomInt(this.minCust, this.maxCust);
+  
       //console.log(getRandomInt(this.minCust, this.maxCust));
       for (let k = 0; k < 14; k++) {
         this.avgcookiesperh.push(getRandomInt(this.minCust, this.maxCust));
+        this.numberOfCookiesTotal=this.numberOfCookiesTotal+this.avgcookiesperh[l];
       }
     }
   },
@@ -130,6 +135,7 @@ var shopDubai = {
       //console.log(getRandomInt(this.minCust, this.maxCust));
       for (let k = 0; k < 14; k++) {
         this.avgcookiesperh.push(getRandomInt(this.minCust, this.maxCust));
+        this.numberOfCookiesTotal=this.numberOfCookiesTotal+this.avgcookiesperh[l];
       }
     }
   },
@@ -193,6 +199,7 @@ var shopParis = {
       //console.log(getRandomInt(this.minCust, this.maxCust));
       for (let k = 0; k < 14; k++) {
         this.avgcookiesperh.push(getRandomInt(this.minCust, this.maxCust));
+        this.numberOfCookiesTotal=this.numberOfCookiesTotal+this.avgcookiesperh[l];
       }
     }
   },
@@ -255,6 +262,7 @@ var shopLima = {
       //console.log(getRandomInt(this.minCust, this.maxCust));
       for (let k = 0; k < 14; k++) {
         this.avgcookiesperh.push(getRandomInt(this.minCust, this.maxCust));
+        this.numberOfCookiesTotal=this.numberOfCookiesTotal+this.avgcookiesperh[l];
       }
     }
   },
