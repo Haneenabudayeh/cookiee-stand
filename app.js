@@ -130,6 +130,7 @@ function addNewStore(event) {
       event.target.minCustomers.value = null;
       event.target.maxCustomers.value = null;
       event.target.avgSale.value = null;
+      event.target.avgSale.value = null;
       new CookieStore(newStoreName,addMinCustomers,addMaxCustomers,addAvgSale);
       renderAll();
       return;
@@ -137,8 +138,5 @@ function addNewStore(event) {
   }
 }
 storeForm.addEventListener('submit',addNewStore);
-
-
 renderAll();
-
 console.log(allLocations);
