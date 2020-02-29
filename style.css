@@ -1,10 +1,12 @@
+
 html, body {
     margin: 0;
     padding: 0;
   }
-  
+
+
   body {
-    background-image: url("images/brightwood.jpg");
+    background-image: url("cutter.jpeg");
     background-repeat: repeat-y;
   }
   
@@ -32,6 +34,9 @@ html, body {
   
   nav li {
     display: inline-block;
+
+    float: right;
+
     /* float: right; */
     padding: 15px 20px 0px 10px;
     height: 35px;
@@ -40,8 +45,11 @@ html, body {
   }
   
   nav li:hover {
+
+    color: rgb(233, 134, 208);
+
     color: rgb(0, 70, 89);
-  }
+
   
   nav h1 {
     float: left;
@@ -73,6 +81,8 @@ html, body {
   }
   
   main th {
+    background-color: rgb(141, 54, 95);
+
     background-color: rgb(0, 156, 191);
     color: white;
   }
@@ -94,7 +104,11 @@ html, body {
   
   footer {
     color: rgb(213, 230, 232);
+
+    background-color: rgb( 71, 2, 42);
+
     background-color: rgb(0, 45, 58);
+
     width: 100%;
     font-size: 14px;
     padding: 20px 0px 20px 30px;
@@ -109,7 +123,7 @@ html, body {
   }
   
   #topBar {
-    background-color: rgb(0, 156, 191);
+    background-color: rgb(71, 2, 42);
     color: white;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
     padding: 0px;
@@ -147,12 +161,20 @@ html, body {
     font-size: 22px;
     padding: 5px 30px;
     color: white;
+
+    background-color: rgb(243, 209, 233);
+
     background-color: rgb(0, 156, 191);
+
     border-radius: 4px;
   }
   
   .buyItem:hover {
+
+    background-color: rgb(221, 186, 209);
+
     background-color: rgb(0, 70, 89);
+
   }
   
   .divider {
@@ -161,8 +183,13 @@ html, body {
     padding: 36px 0px 60px 0px;
     margin: 0px 20px 0px 20px;
     height: 39px;
+
+    background-color: rgb(247, 158, 227);
+    border-bottom: 3px solid rgb(247, 158, 227);
+
     background-color: rgb(0, 70, 89);
     border-bottom: 3px solid rgb(0, 45, 58);
+
     color: white;
     font-family: 'Oswald', sans-serif;
   }
