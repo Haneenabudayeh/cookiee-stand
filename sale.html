@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Sales Data</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+
+<body>
+  <div id="topBar">
+    <nav>
+      <h1><a href="index.html">Salmon Cookies</a></h1>
+    </nav>
+    <nav>
+      <ul>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="locations.html">Locations</a></li>
+        <li><a href="menu.html">Menu</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div id="banner">
+    <img src="salmon2.png">
+  </div>
+  <div class="divider">
+
+    <!-- <h1>Internal Sales Data</h1> -->
+  </div>
+  <main>
+    <div class="divider">
+      <h1>Seattle's Favorite Coffee Snack</h1>
+    </div>
+    <main>
+      <h1>Seasonal Specials</h1>
+      <h2>Geoduck Cookies</h2>
+      <div class="price"><p>$5.00</p></div>
+      <h2>Smoked Salmon Biscuits</h2>
+      <div class="price"><p>$4.50</p></div>
+      <h2>Salmon Croquettes</h2>
+      <div class="price"><p>$4.00</p></div>
+      <h2>Oyster Water</h2>
+      <div class="price"><p>$5.00 per pint</p></div>
+
+    <h1>Internal Sales Data</h1>
+  </div>
+  <main>
+
+    <div id="form">
+      <form id="store-form">
+        <fieldset>
+          <legend>Add New Location</legend>
+          <label for="name">Name: </label>
+          <input name="name" type="text" />
+
+          <label for="minCustomers">Minimum Customers: </label>
+          <input name="minCustomers" type="number" />
+
+          <label for="maxCustomers">Maximum Customers: </label>
+          <input name="maxCustomers" type="number" />
+
+          <label for="avgSale">Average Sale: </label>
+          <input name="avgSale" type="number" />
+
+          <button type="submit">Add Location</button>
+      </form>
+    </div>
+    <table align=center id="locationSales"></table>
+  </main>
+  <footer>
+
+    <div style="text-align: left;">
+      <h3>Contact Us<h3>
+      <h4>Email: haneenabudayeh5@gmail.com</h4>
+      <h4>Phone: 0785039898</h4>
+    </div>
+    <div style="text-align: right;">
+      <h4>Follow us on Twitter</h4>
+      <h4>Like us on Facebook</h4>
+      <h4>Follow us on Instagram</h4>
+    </div>
+
+
+    <footer>
+      <script src="app.js"></script>
+</body>
+
+</html>
